@@ -1,0 +1,76 @@
+
+body{
+    background-color: aliceblue;
+    background-image: url(spar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#vare{
+    margin-left: 38%;
+}
+
+#send{
+    border-radius: 5px;
+    height: 25px;
+    width: 70px;
+}
+
+#send:hover{
+    background-color: lawngreen;
+}
+
+
+#listeForm {
+   
+}
+
+ul{
+    
+}
+
+
+#listeDiv {
+  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(mat.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    border: 15px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+#fjern{
+    margin-left: 37%;
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+#fjern:hover{
+    background-color:red;
+}
+
+#fjernhele{
+    
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+#fjernhele:hover{
+    background-color:orangered;
+}
+
+h1{
+    text-align: center;
+    margin-top: 60px;
+}
