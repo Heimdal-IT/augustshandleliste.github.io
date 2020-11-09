@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="utseende.css" rel="stylesheet">
+    
+    <head>
+<meta charset="utf-8">
+        <title>Dokument</title>
+<h1>Min handleliste</h1>
+
+    </head>
+    
+    
+<body>
+    
+    <br>
+    
+    <br>
+    
+    
+    
+    <input type="text" id="vare" placeholder="Vare">
+    
+            <b id="g">Antall:</b>&nbsp;<select id="antall">
+        <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+    
+                
+               
+    
+    
+    
+    </select>
+    
+    
+    <button id="send" onClick="myFunction()">Legg til</button>
+    <br>
+    
+    <br>
+    
+    <input type="button" id="fjern" value="Fjern siste vare" onClick="myFunction2()">&nbsp;&nbsp;&nbsp;<input type="button" id="fjernhele" value="Fjern hele listen" onClick="myFunction3()">
+    
+    <form id="listeForm">
+    <ul id="listeDiv" class="tekst"></ul>
+    </form>
+    
+    
+    
+    </body>
+    
+    
+    
+    
+    <script>
+        
+    let listeDiv;
+    let handleliste; 
+    let vare;
+    let antall = [];
+    let gjenstand;
+    let mengde;
+    let handleliste1 = [];
+    
+       
+        
+        function myFunction(){
+            handleliste1.push(document.getElementById('vare').value);
+            
+            /*if(document.getElementById('vare')=){
+                return;
+            }
+            
+            else if(document.getElementById('vare')){
+                antall.push(document.getElementById("antall").value);
+                for(let i = 0; i < handleliste1.length; i++){
+                document.getElementById('listeDiv').innerHTML += antall[i] + ' ' + handleliste1[i] + '<br>';
+                
+            }*/
+            
+            //vare = document.getElementById("vare").value;
+            
+            antall.push(document.getElementById("antall").value);
+            /*console.log(vare + antall);
+            
+            gjenstand = document.getElementsByClassName("gjenstand");
+            mengde = document.getElementsByClassName("mengde");*/
+            
+            console.log(antall);
+            console.log(handleliste1);
+            
+            document.getElementById('listeDiv').innerHTML = '';
+            for(let i = 0; i < handleliste1.length; i++){
+                document.getElementById('listeDiv').innerHTML += antall[i] + ' ' + handleliste1[i] + '<br>';
+                
+                
+   //gjenstand[i].textContent = vare ;
+     //           mengde[i].textContent = antall + " ";  
+            }    
+            //listeDiv = document.getElementById("liste");
+
+//listeDiv.innerHTML = handleliste[0];            
+};
+        
+        
+       function myFunction2(){
+           
+            handleliste1.pop();
+            
+            antall.push(document.getElementById("antall").value);
+            console.log(handleliste1); 
+
+            
+            document.getElementById('listeDiv').innerHTML = '';
+            for(let i = 0; i < handleliste1.length; i++){
+                document.getElementById('listeDiv').innerHTML += antall[i] + ' ' + handleliste1[i] + '<br>';
+            }
+           
+       };
+    
+        
+        function myFunction3(){
+           
+            document.getElementById("listeDiv").innerHTML = '';
+            
+            handleliste1 = [];
+            console.log(handleliste1);
+        };
+
+    </script>
+    
+    
+
+
+</html>
+
+
+        
